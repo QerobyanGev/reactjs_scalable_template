@@ -1,5 +1,5 @@
 function App() {
-  const unused = 'unused';
+  const _unused = 'unused';
   return <div className="app">App</div>;
 }
 
