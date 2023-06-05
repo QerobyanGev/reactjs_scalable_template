@@ -9,7 +9,7 @@ if [ $lint_exit_code -ne 0 ]; then
   exit 1
 fi
 
-warning_count=$(echo "$lint_output" | grep -c "warning:")
+warning_count=$(echo "$lint_output" | grep -i "warning:" | wc -l | xargs)
 if [ $warning_count -ne 0 ]; then
   echo "Lint warnings found. Commit aborted."
   exit 1
