@@ -1,4 +1,6 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
+#!/bin/sh
 yarn lint
+if [ $? -ne 0 ]; then
+  echo "Lint errors found. Commit aborted."
+  exit 1
+fi
