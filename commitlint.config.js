@@ -9,7 +9,7 @@
 // test: Adding missing tests or correcting existing tests
 // npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 
-export default {
+module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
     'body-leading-blank': [1, 'always'],
