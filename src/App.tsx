@@ -1,5 +1,6 @@
 function App() {
-	return <div className="app">App</div>;
+  const unused = 'unused';
+  return <div className="app">App</div>;
 }
 
 export default App;
